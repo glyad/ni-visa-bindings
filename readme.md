@@ -90,6 +90,21 @@ Contributions are welcome! If you encounter a bug, have a feature request, or wa
 
 ---
 
+## Roadmap
+       
+      |                                  | Implemented in    | Implemented in  |
+      | Feature                          | Original Library  | crate           |
+      |----------------------------------|-------------------|-----------------|
+      | Provide the same functionality,  |                   |                 |
+      | as in original library           |      ✅           |        ✅        |
+      | Documentation                    |      ✅           |        ⬜        |
+      | Expanded test coverage           |      ⬜           |        ⬜        |
+      | Add more comprehancive examples  |      ⬜           |        ⬜        |
+
+Contributions and suggestions for the roadmap are welcome! Feel free to open an issue or discussion.
+
+---
+
 ## License
 
 This project is licensed under the [Unlicense License](https://github.com/glyad/ni-visa-bindings/blob/main/LICENSE).
