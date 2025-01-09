@@ -10,6 +10,7 @@ readme = "readme.md"
 license = "MIT"
 keywords = ["nivisa", "ni-visa", "visa", "SCPI", "IVI"]
 categories = [ "external-ffi-bindings", "hardware-support", "science" ]
+repository = "https://github.com/glyad/ni-visa-bindings/"
 
 [build-dependencies]
 bindgen = "0.71.1"  # To generate Rust bindings from visa.h
