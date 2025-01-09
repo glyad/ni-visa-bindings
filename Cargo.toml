@@ -6,7 +6,7 @@ authors = [
     "David Kossoglyad <david@logoui.co.il>"
 ]
 description = "Raw Rust bindings to the NI-VISA library, providing low-level access to the National Instruments Virtual Instrument Software Architecture (VISA) API for instrument control and communication."
-readme = "README.md"
+readme = "readme.md"
 license = "MIT"
 keywords = ["nivisa", "ni-visa", "visa", "SCPI", "IVI"]
 categories = [ "external-ffi-bindings", "hardware-support", "science" ]
