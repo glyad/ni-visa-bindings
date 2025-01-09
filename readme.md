@@ -92,7 +92,7 @@ Contributions are welcome! If you encounter a bug, have a feature request, or wa
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/glyad/ni-visa-bindings/blob/main/LICENSE).
 
 ---
 
