@@ -14,11 +14,16 @@
 
 ## Installation
 
-Add the following to your `Cargo.toml`:
+There are two ways to add the crate to your project dependencies:
 
+- The first way is to add the following to your `Cargo.toml`:
 ```toml
 [dependencies]
-ni-visa-bindings = "0.1"
+ni-visa-bindings = "1.0.0"
+```
+- The second way is to execute the following CLI command in your OS shell terminal:
+```bash
+cargo add ni-visa-bindings
 ```
 
 You will also need to have the NI-VISA library installed on your system.
