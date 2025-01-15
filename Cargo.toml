@@ -18,6 +18,3 @@ bindgen = "0.71.1"  # To generate Rust bindings from visa.h
 [lib]
 crate-type = ["cdylib"]
 path = "src/lib.rs"
-
-[features]
-default = []

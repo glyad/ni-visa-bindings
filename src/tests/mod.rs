@@ -1,4 +1,4 @@
-use super::*;
+use crate::ffi::*;
 
 const DEVICE_ADDRESS: &'static [u8; 43] = b"USB0::0x0957::0x5407::MY59002371::0::INSTR\0";
 const DEVICE_ADDRESS_PTR: *const u8 = DEVICE_ADDRESS.as_ptr();
@@ -74,7 +74,6 @@ fn test_visa_open_default_rm() {
 }
 
 #[test]
-
 fn test_visa_open_close() {
     println!("test_visa_open_close");
 
@@ -757,7 +756,7 @@ fn test_vi_write_func_squ() {
     unsafe {
         let (default_rm, session, _) = setup("test_vi_write_func_squ");
 
-        let scpi_command = b":FREQuency +1.0E+01";
+        let scpi_command = b"OUTPut ON; :FREQuency +20.0E+03; :FUNC SIN; VOLTage:OFFSet 2mV; :FUNCtion:ARBitrary:PTPeak 2";
         let mut write_count: ViUInt32 = 0;
         let write_status = viWrite(
             session,
