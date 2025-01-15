@@ -1,6 +1,6 @@
 [package]
 name = "ni-visa-bindings"
-version = "1.0.0"
+    version = "1.0.1"
 edition = "2021"
 authors = [
     "David Kossoglyad <david@logoui.co.il>"
