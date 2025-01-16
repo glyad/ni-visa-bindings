@@ -1,5 +1,4 @@
 use crate::ffi::*;
-
 const DEVICE_ADDRESS: &'static [u8; 43] = b"USB0::0x0957::0x5407::MY59002371::0::INSTR\0";
 const DEVICE_ADDRESS_PTR: *const u8 = DEVICE_ADDRESS.as_ptr();
 
@@ -7,7 +6,7 @@ unsafe fn setup(method_under_test: &str) -> (ViSession, ViSession, ViStatus) {
     print_test_header(method_under_test);
     let mut default_rm: ViSession = 0;
 
-    assert_eq!(
+    assert_eq!( 
         viOpenDefaultRM(&mut default_rm),
         VI_SUCCESS.try_into().unwrap(),
         "Failed to open default resource"

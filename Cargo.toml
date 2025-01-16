@@ -1,6 +1,6 @@
 [package]
 name = "ni-visa-bindings"
-    version = "1.0.1"
+version = "1.0.1"
 edition = "2021"
 authors = [
     "David Kossoglyad <david@logoui.co.il>"
@@ -11,10 +11,15 @@ license = "MIT"
 keywords = ["nivisa", "ni-visa", "visa", "SCPI", "IVI"]
 categories = [ "external-ffi-bindings", "hardware-support", "science" ]
 repository = "https://github.com/glyad/ni-visa-bindings/"
+homepage = "https://github.com/glyad/ni-visa-bindings/"
 
 [build-dependencies]
-bindgen = "0.71.1"  # To generate Rust bindings from visa.h
+bindgen = "0.71.1"
 
 [lib]
 crate-type = ["cdylib"]
 path = "src/lib.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
